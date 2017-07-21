@@ -8408,7 +8408,7 @@ body {
   margin-top: 20px;
 }
 .alertColor {
-  color: red;
+  color: red !important;
 }
 /* Button structure */
 .btn-transparent {
@@ -8451,11 +8451,11 @@ body {
 .panel-main {
   box-shadow: 1px 10px 30px -10px #c5c5c5;
   border-radius: 7px;
-  height: 90px;
-  position: relative;
+  min-height: 90px;
 }
 .panel-body {
   padding: 17px 0 0 0;
+  position: relative;
 }
 .panel-body h2 {
   margin: 0 0 0 20px;
@@ -8492,6 +8492,9 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   color: #636b75;
+}
+.panel-content {
+  border-top: 1px solid #f0f0f0;
 }
 /* Login structure */
 .login .container {
