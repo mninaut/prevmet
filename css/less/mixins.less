@@ -40,3 +40,23 @@
 @import "mixins/center-block.less";
 @import "mixins/navbar-vertical-align.less";
 @import "mixins/grid.less";
+
+
+.transition(@t:all){
+	transition-property: @t;
+	transition-duration: .2s;
+}
+
+
+.bgCover{	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.translateY(@t){
+	-ms-transform: translateY(@t); /* IE 9 */
+	-webkit-transform: translateY(@t); /* Safari */
+	transform: translateY(@t);
+}
