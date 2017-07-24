@@ -24,112 +24,228 @@
     <div class="container-fluid">
 
       <!-- Menu -->
-        <nav class="navbar navbar-main row">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <nav class="navbar navbar-main row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#">
                 <img src="img/logo83.png" alt="prevmet">
             </a>
-          </div>
+        </div>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active">
-                <a href="#">Previsões</a>
-              </li>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Previsões</a>
+            </li>
 
-              <li>
-                <a href="#">Análise sinótica</a>
-              </li>
-              <li>
-                <a href="#">Acerto</a>
-              </li>
-              <li>
-                <a href="#">Relatórios</a>
-              </li>
+            <li>
+              <a href="#">Análise sinótica</a>
+            </li>
+            <li>
+              <a href="#">Acerto</a>
+            </li>
+            <li>
+              <a href="#">Relatórios</a>
+            </li>
 
-            </ul>
+          </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fui-bubble" ></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
-              </li>
-              <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="img/avatar.png" alt="prevmet"> Gustavo Marqeues <b class="caret"></b></a>
-                    <span class="dropdown-arrow"></span>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Alterar Senha</a></li>
-                      <li><a href="#">Alterar Foto</a></li>
-                      <li><a href="#">Sair do sistema</a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fui-bubble" ></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="img/avatar.png" alt="prevmet"> Gustavo Marqeues <b class="caret"></b></a>
+              <span class="dropdown-arrow"></span>
+              <ul class="dropdown-menu">
+                <li><a href="#">Alterar Senha</a></li>
+                <li><a href="#">Alterar Foto</a></li>
+                <li><a href="#">Sair do sistema</a></li>
 
-                    </ul>
-                  </li>
-            </ul>
-          </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-        </nav>
+      </nav>
 
       <!--  Page Content-->
 
-        <div class="headerPage page-header clearfix">
-              <h1>Olá, <strong>Gustavo Marques</strong>, Seu DISME tem 20 previsões para serem realizadas e/ou aguardando publicação.</h1>
-              <a href="#" class="btn btn-transparent">Ver previsões <br>realizadas</a>
-        </div>
+      <div class="headerPage page-header clearfix">
+        <h1>Olá, <strong>Gustavo Marques</strong>, Seu DISME tem 20 previsões para serem realizadas e/ou aguardando publicação.</h1>
+        <a href="#" class="btn btn-transparent">Ver previsões <br>realizadas</a>
+      </div>
 
-        <div class="contentPage ">
-            <div class="col-sm-12">
+      <div class="contentPage ">
+        <div class="col-sm-12">
 
-              <div class="panel panel-main">
-                  <div class="panel-left col-sm-1">
-                    <p>Região</p>
-                    <p>Diário</p>
-                  </div>
-                  <div class="panel-body">
-                    <h2>São Paulo</h2>
-                    <div class="panel-action">
-                      <p class="">Previsão Pendente</p>
-                      <button type="button" class="btn btn-transparent-blue">Fazer Previsão</button>
-                   </div>
-                  </div>
-                  <div class="panel-content">
-                    <h1>Oi</h1>
-                  </div>
+          <div class="panel panel-main">
+            <div class="panel-left col-sm-1">
+              <p>Região</p>
+              <p>Diário</p>
+            </div>
+            <div class="panel-body">
+              <h2>São Paulo</h2>
+              <div class="panel-action">
+                <p class="">Previsão Pendente</p>
+                <button type="button" class="btn btn-transparent-blue">Fazer Previsão</button>
               </div>
+            </div>
+            <div class="panel-content">
+              <!-- Fazendo  previsão -->
+              <div class="dopreview tabs-bottom">
+                <div class="tab-content">
+                  <div class="tab-pane sform active" id="today">
 
-              <div class="panel panel-main">
-                  <div class="panel-left col-sm-1">
-                    <p>Região</p>
-                    <p>Diário</p>
+                    <div class="left">
+
+                        <div class="form-group">
+                          <label>Condição do tempo</label>
+                          <select class="form-control">
+                            <option></option>
+                            <option>Nublado a parcialmente nublado</option>
+                            <option>Chuvoso</option>
+                          </select>
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+
+
+
+                        <div class="form-group">
+                          <label>Resumo do tempo</label>
+                          <input type="text" class="form-control">
+                        </div>
+
+                        <div class="col-sm-8 form-group pd0 ">
+
+                          <div class="binputs col-sm-6">
+                            <label>Temperatura</label>
+                            <input type="text" class="form-control" maxlength="2" placeholder="Min">
+                            <input type="text" class="form-control" maxlength="2" placeholder="Max">
+                          </div>
+
+                          <div class="binputs col-sm-6">
+                            <label>Umidade Relativa</label>
+                            <input type="text" class="form-control" placeholder="Min">
+                            <input type="text" class="form-control" placeholder="Max">
+                          </div>
+
+                          <div>
+                            <label>Resumo do tempo</label>
+                            <select class="form-control">
+                              <option></option>
+                              <option>Nublado a parcialmente nublado</option>
+                              <option>Chuvoso</option>
+                            </select>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                          </div>
+
+                        </div>
+
+                        <div class="col-sm-4 ">
+                            <div class="form-group">
+                          <label for="sel1">Direção do vento</label>
+                          <select class="form-control swind"  multiple id="sel1">
+                              <option>NW</option>
+                              <option>N</option>
+                              <option>NE</option>
+                              <option>W</option>
+                              <option disabled=""> </option>
+                              <option>E</option>
+                              <option>SW</option>
+                              <option>S</option>
+                              <option>SE</option>
+                            </select>
+
+                          </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="right">
+
+                        <div class="form-group">
+                          <label>Complemento</label>
+                          <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Complemento</label>
+                          <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
                   </div>
-                  <div class="panel-body">
-                    <h2>Brasília</h2>
-                    <div class="panel-action">
-                      <p class="alertColor">Previsão Pendente</p>
-                      <button type="button" class="btn btn-transparent-blue">Fazer Previsão</button>
-                   </div>
+
+
+
+
+
+                  <div class="tab-pane" id="tomorrow">
+                    <div class="jumbotron">
+                      <h1>About Tab</h1>
+                      <p>because they are the most important for an encyclopedia to have, as determined by the community of participating editors..</p>
+                    </div>
                   </div>
-                  <div class="panel-content">
-                    <h1>Oi 2</h1>
-                  </div>
+
+
+                </div>
+                <!-- Fazendo  previsão  -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#today" data-toggle="tab">Hoje</a></li>
+                  <li><a href="#tomorrow" data-toggle="tab">Amanhã</a></li>
+                  <li><a href="#day3" data-toggle="tab">25/5</a></li>
+                  <li><a href="#day4" data-toggle="tab">26/5</a></li>
+                  <li><a href="#day5" data-toggle="tab">27/5</a></li>
+                </ul>
+
               </div>
-
-
+              <!-- /tabs -->
+            </div>
           </div>
+
+          <div class="panel panel-main">
+            <div class="panel-left col-sm-1">
+              <p>Região</p>
+              <p>Diário</p>
+            </div>
+            <div class="panel-body">
+              <h2>Brasília</h2>
+              <div class="panel-action">
+                <p class="alertColor">Previsão Pendente</p>
+                <button type="button" class="btn btn-transparent-blue">Fazer Previsão</button>
+              </div>
+            </div>
+            <div class="panel-content">
+              <h1>Oi 2</h1>
+            </div>
+          </div>
+
+
         </div>
+      </div>
 
 
 

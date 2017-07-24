@@ -8416,8 +8416,36 @@ body {
 .contentPage {
   margin-top: 20px;
 }
+.pd0 {
+  padding: 0;
+}
 .alertColor {
   color: red;
+}
+/* Form structure */
+.form-control,
+.select2-search input,
+.select2-search input[type="text"] {
+  border: 1px solid #cacdcf;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+.form-group i {
+  float: right;
+  color: #cacdcf;
+  margin-top: -41px;
+  margin-right: 5px;
+  pointer-events: none;
+  padding: 10px 14px;
+  border-left: 1px solid #cacdcf;
+  height: 40px;
+  font-size: 20px;
 }
 /* Button structure */
 .btn-transparent {
@@ -8435,7 +8463,7 @@ body {
   background-image: linear-gradient(-180deg, #41adff 0%, #4181ff 100%);
   border: 2px solid #41adff;
 }
-.btn-transparent.btn:focus {
+.btn-transparent:focus {
   background-image: linear-gradient(-180deg, #4181ff 0%, #41adff 100%);
 }
 .btn-transparent-blue {
@@ -8453,14 +8481,47 @@ body {
   background-image: linear-gradient(-180deg, #41adff 0%, #4181ff 100%);
   border-radius: 5px;
 }
-.btn-transparent-blue.btn:focus {
+.btn-transparent-blue:focus {
   background-image: linear-gradient(-180deg, #4181ff 0%, #41adff 100%);
+}
+/* Beside Inputs */
+.binputs {
+  padding: 0;
+}
+.binputs label {
+  display: block;
+}
+.binputs input {
+  width: 25%;
+  text-align: center;
+  float: left;
+  border-radius: 5px 0px 0 5px;
+}
+.binputs input:last-child {
+  border-left: 0;
+  border-radius: 0px 5px 5px 0px;
+}
+/* Wind direction */
+.swind {
+  margin: 0;
+  padding: 0;
+  height: 170px;
+  padding-left: 10px;
+  padding-top: 7px;
+}
+.swind option {
+  float: left;
+  width: 32%;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid;
+  padding: 15px 0px;
 }
 /* panel structure */
 .panel-main {
   box-shadow: 1px 10px 30px -10px #c5c5c5;
   border-radius: 7px;
-  height: 90px;
+  min-height: 90px;
   position: relative;
 }
 .panel-body {
@@ -8501,6 +8562,67 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   color: #636b75;
+}
+/* Tabs  */
+/* custom inclusion of right, left and below tabs */
+.tabs-below > .nav-tabs {
+  border-bottom: 0;
+}
+.tabs-below > .nav-tabs > li > a:hover {
+  border-top-color: #dddddd;
+  border-bottom-color: transparent;
+}
+.tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #dddddd;
+  border-bottom-color: transparent;
+}
+.tab-content {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+.tab-content .sform .left {
+  float: left;
+  width: 50%;
+  padding: 40px;
+}
+.tab-content .sform .right {
+  float: left;
+  width: 50%;
+  padding: 40px;
+}
+.pill-content > .pill-pane {
+  display: none;
+}
+.pill-content > .active {
+  display: block;
+}
+.tabs-bottom > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+.tabs-bottom > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+.tabs-bottom > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+.tabs-bottom > .nav-tabs > .active > a {
+  border-color: transparent #dddddd #dddddd #dddddd;
+}
+.tabs-bottom > .nav-tabs > .active > a:hover {
+  border-color: transparent #dddddd #dddddd #dddddd;
+}
+.tabs-bottom > .nav-tabs > .active > a:focus {
+  border-color: transparent #dddddd #dddddd #dddddd;
 }
 /* Login structure */
 #loginSidebar,
